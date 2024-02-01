@@ -11,9 +11,9 @@
 <body>
 	<header>
 		<nav>
-			<a href="#">PIZZAS</a>
-			<a href="#">BEBIDAS</a>
-			<a href="#">SALGADOS</a>
+			<a href="#pizzas">PIZZAS</a>
+			<a href="#bebidas">BEBIDAS</a>
+			<a href="#salgados">SALGADOS</a>
 		</nav>
 		<br>
 
@@ -21,14 +21,13 @@
 			<img src="img/pizzaBairro.png" alt="Logo pizza do bairro"></img>
 		</figure>
 	</header>
-<!--
 	<div id="compras">
-		<h4>Caixa de compras</h4>
-		<button>COMPRAR AGORA</button>
+		<h4>Clique no botão e faça seu pedido</h4>
+		<br>
+		<button id="btn-compras">FAZER MEU PEDIDO</button>
 	</div>
--->
 	<br>
-
+	<br>
 	<section class="conteudo-topo">
 		<h1>Pizza, bebidas e salgados todos os dias</h1>
 		<!--
@@ -41,44 +40,12 @@
 		<h5>de segunda a quinta todas as PIZZAS por</h5>
 		<h5>apenas R$59,99</h5>
 	</section>
-
-	<!--
-	<section class="conteudo">
-		<h2>Este é o segundo título</h2>
-		<p>
-			Nam scelerisque dui eu dui condimentum efficitur. Morbi sed tempus lorem. Cras et tellus sed velit cursus lacinia. Praesent pulvinar metus in lacinia dictum. Mauris non purus euismod, lacinia felis convallis, euismod orci. Aliquam molestie mauris magna, et pulvinar augue tempor vel. Nullam quis sem risus. Sed libero metus, placerat ut quam sit amet, lacinia gravida sem. Donec pellentesque magna quis mattis consequat. Cras quis nisl ut quam ornare suscipit. Pellentesque sed metus elit.
-		</p>
-	</section>
-
 	<br>
-
-	<section class="conteudo">
-		<h1>Este é o terceiro titulo</h1>
-		<figure>
-			<img class="images-site" src="https://picsum.photos/200/100" alt="Segunda imagem do site">
-			<figcaption>Segunda imagem</figcaption>
-		</figure>
-		<br>
-		<p>
-			In vehicula condimentum ipsum, id ornare velit consectetur quis. Duis fermentum risus vel mauris hendrerit, pharetra viverra ligula commodo. Ut nec mollis felis, vel malesuada justo. Praesent arcu ipsum, dictum non luctus at, porttitor vitae diam. Donec mi tortor, feugiat a laoreet ac, mollis a leo. Curabitur gravida urna dolor, vel finibus magna fringilla vel. Nulla enim elit, interdum sed varius sed, placerat vitae mauris. Sed mauris neque, sodales tincidunt varius vitae, rutrum et nisl. Nullam blandit sagittis commodo. Quisque fringilla dui nulla, nec placerat nulla dignissim vel. In aliquet accumsan finibus. Morbi blandit velit congue ultricies congue. Donec in semper nibh, sit amet mollis erat. Aliquam id ullamcorper velit, eget dictum sapien. Duis ornare mollis mi vel imperdiet.
-		</p>
-	</section>
-
+	<a href="#" id="pizzas"></a>
 	<br>
-
-	<section class="conteudo">
-		<h2>Este é o quarto título</h2>
-		<p>
-			Sed quis ex vel libero viverra porta. Morbi eget sem varius, congue nibh vel, egestas urna. Quisque viverra accumsan elit eu finibus. Donec facilisis vulputate enim et pharetra. Proin vulputate, nisl eu consequat iaculis, eros nulla auctor dolor, vel hendrerit diam elit commodo magna. Vestibulum accumsan, massa id tincidunt congue, elit lacus placerat sapien, id mattis neque nisl id libero. In hac habitasse platea dictumst.
-		</p>
-		<p>
-			Sed suscipit tempus eros et aliquet. Vivamus porta est et ex cursus, quis cursus tortor pulvinar. Nulla facilisi. Pellentesque efficitur fringilla vestibulum. Phasellus dignissim euismod diam a ultricies. Nam aliquam porttitor sapien, ut varius nisi lacinia vitae. Suspendisse sit amet ornare risus.
-		</p>
-	</section>
--->
-	<br>
-
 	<section class="conteudo" id="grid-conteudo">
+		<h5>Cardápio de Pizza</h5>
+		<br>
 		<div class="grid">
 			<div>
 				<figure>
@@ -116,6 +83,7 @@
 			</div>
 
 			<div>
+				<br>
 				<figure>
 					<img class="imagens-site" src="img/portuguesa.jpg" alt="Pizza Portuguesa">
 					<figcaption><a href="#">Pizza Portuguesa</a></figcaption>
@@ -124,46 +92,116 @@
 
 		</div>
 	</section>
-<!--
-	<section class="conteudo" id="formulario">
-		<h2>Selecione um produto para mais informações</h2>
+	<br>
+	<a href="#" id="bebidas"></a>
+	<br>
+	<section class="conteudo" id="grid-conteudo">
+		<h5>Refrigerantes</h5>
 		<br>
-		<form accept="#" method="get" target="_blank">
-			<label for="nome">Nome</label><br>
-			<input type="text" id="nome" name="nome" placeholder="Digite o seu nome">
-			<br><br>
+		<div class="grid">
+			<div>
+				<figure>
+					<img class="imagens-site" src="img/refri1.jpg" alt="coca-cola">
+					<figcaption><a href="#">Coca-Cola 2lt </a></figcaption>
+				</figure>
+			</div>
 
-			<label for="telefone">Telefone</label><br>
-			<input type="tel" id="tel" name="tel" placeholder="Digite seu cell com ddd">
-			<br><br>
+			<div>
+				<figure>
+					<img class="imagens-site" src="img/refri2.jpg" alt="fanta">
+					<figcaption><a href="#">Fanta Laranja 2lt</a></figcaption>
+				</figure>
+			</div>
 
-			<input type="checkbox" id="opcoes" name="html"value="html">
-			<label for="html">Quero saber mais sobre HTML e CSS</label>
-			<br><br>
-			<input type="checkbox" id="opcoes" name="php"value="php">
-			<label for="php">Quero saber mais sobre HTML, CSS e PHP</label>
-			<br><br>
-			<input type="checkbox" id="opcoes" name="javascript"value="javascript">
-			<label for="javascript">Quero saber mais sobre HTML e JavaScript</label>
-			<br><br>
+			<div>
+				<figure>
+					<img class="imagens-site" src="img/refri3.jpg" alt="soda">
+					<figcaption><a href="#">Soda Limonada 2lt</a></figcaption>
+				</figure>
+			</div>
 
-			<label for="mensagem">Deixa a sua mensagem(opcional):</label>
-			<br><br>
-			<textarea id="mensagem" rows="5" cols="25"></textarea>
-			<br><br>
-			<button id="btn-limpar" type="reset" value="LIMPAR">LIMPAR</button>&nbsp
-			<button id="btn-enviar" type="submit" value="ENVIAR">ENVIAR</button>
+			<div>
+				<figure><br>
+					<img class="imagens-site" src="img/refri4.jpg" alt="combo">
+					<figcaption><a href="#">Combo</a></figcaption>
+				</figure>
+			</div>
 
-		</form>
-	</section>
--->
+			<div>
+				<figure><br>
+					<img class="imagens-site" src="img/refri5.jpg" alt="coca-cola">
+					<figcaption><a href="#">Coca-Cola Lata</a></figcaption>
+				</figure>
+			</div>
+
+			<div>
+				<br>
+				<figure>
+					<img class="imagens-site" src="img/refri6.jpg" alt="guaraná">
+					<figcaption><a href="#">Guaraná Lata</a></figcaption>
+				</figure>
+			</div>
+
+		</div>
+	</section>	
+	<br>
+	<a href="#" id="salgados"></a>
+	<br>
+	<section class="conteudo" id="grid-conteudo">
+		<h5>Cardápio de Salgados</h5>
+		<br>
+		<div class="grid">
+			<div>
+				<figure>
+					<img class="imagens-site" src="img/salgados1.jpg" alt="coxinha">
+					<figcaption><a href="#">Coxinha</a></figcaption>
+				</figure>
+			</div>
+
+			<div>
+				<figure>
+					<img class="imagens-site" src="img/salgados2.jpg" alt="bolinha de queijo">
+					<figcaption><a href="#">Bolinha de Queijo</a></figcaption>
+				</figure>
+			</div>
+
+			<div>
+				<figure>
+					<img class="imagens-site" src="img/salgados3.jpg" alt="mini coxinha">
+					<figcaption><a href="#">Mini Coxinha</a></figcaption>
+				</figure>
+			</div>
+
+			<div>
+				<figure><br>
+					<img class="imagens-site" src="img/salgados4.jpg" alt="bauru">
+					<figcaption><a href="#">Bauru</a></figcaption>
+				</figure>
+			</div>
+
+			<div>
+				<figure><br>
+					<img class="imagens-site" src="img/salgados5.jpg" alt="salgados sortidos">
+					<figcaption><a href="#">Salgados Sortidos</a></figcaption>
+				</figure>
+			</div>
+
+			<div>
+				<br>
+				<figure>
+					<img class="imagens-site" src="img/salgados6.jpg" alt="mini sortidos">
+					<figcaption><a href="#">Mini Sortidos</a></figcaption>
+				</figure>
+			</div>
+
+		</div>
+	</section>	
 	<br>
 	<footer>
-		<h3>TÍTULO DA EMPRESA</h3>
-		<h4>Sub Título</h4>
-		<p>Contato: email@email.com</p>
+		<h3>PIZZA DO BAIRRO</h3>
+		<h4>A melhor da região</h4>
 		<p>WhatsAspp: (00) 90000-0000</p>
-		<p>Direitos Reservados</p>
+		<p>Desenvolvido por: Codding Collie, de acordo com as instruções de Wagner Cardoso</p>
 	</footer>
 </body>
 </html>
